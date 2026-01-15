@@ -1,1 +1,8 @@
-export default function Login(){return <div>Login Page</div>}
+export default function LoginPage() {
+  return <div>Login</div>;
+}
+
+export default function RegisterPage() {
+  return <div>Register</div>;
+}
+
