@@ -3,10 +3,29 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="min-h-screen flex flex-col items-center justify-center gap-8 bg-[#fafafa]">
-      {/* LOGO */}
-<img
-  src="/images/unified-health-logo.svg"
-  alt="Unified Health"
-  style={{ width: "320px", height: "auto" }}
-/>
 
+      {/* LOGO */}
+      <img
+        src="/images/unified-health-logo.svg"
+        alt="Unified Health"
+        className="w-[320px] h-auto"
+      />
+
+      {/* BUTTONS */}
+      <div className="flex gap-4">
+        <Link href="/register">
+          <button className="px-8 py-3 rounded-full bg-black text-white">
+            Register
+          </button>
+        </Link>
+
+        <Link href="/login">
+          <button className="px-8 py-3 rounded-full border border-black">
+            Sign In
+          </button>
+        </Link>
+      </div>
+
+    </main>
+  );
+}
