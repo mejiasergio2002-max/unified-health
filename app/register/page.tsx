@@ -1,1 +1,7 @@
-export default function Register(){return <div>Register Page</div>}
+export default function RegisterPage() {
+  return (
+    <main className="min-h-screen flex items-center justify-center">
+      <h1>Register</h1>
+    </main>
+  );
+}
