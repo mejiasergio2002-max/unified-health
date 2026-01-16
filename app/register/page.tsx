@@ -2,7 +2,7 @@ export default function RegisterPage() {
   return (
     <main className="min-h-screen bg-[#fafafa] flex items-center justify-center py-12">
       <form className="w-full max-w-2xl bg-white p-8 rounded-xl shadow space-y-6">
-        
+
         <h1 className="text-2xl font-semibold text-center">
           Unified Health Registration
         </h1>
@@ -12,9 +12,9 @@ export default function RegisterPage() {
           <h2 className="font-medium text-lg">Personal Information</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <input placeholder="First Name" className="input" />
-            <input placeholder="Middle Name (optional)" className="input" />
-            <input placeholder="Last Name" className="input" />
+            <input className="input" placeholder="First Name" />
+            <input className="input" placeholder="Middle Name (optional)" />
+            <input className="input" placeholder="Last Name" />
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -39,15 +39,15 @@ export default function RegisterPage() {
         <section className="space-y-4">
           <h2 className="font-medium text-lg">Residential Address</h2>
 
-          <input placeholder="Street Address" className="input" />
+          <input className="input" placeholder="Street Address" />
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <input placeholder="City / Municipality" className="input" />
-            <input placeholder="Province / State" className="input" />
-            <input placeholder="ZIP / Postal Code" className="input" />
+            <input className="input" placeholder="City / Municipality" />
+            <input className="input" placeholder="Province / State" />
+            <input className="input" placeholder="ZIP / Postal Code" />
           </div>
 
-          <input placeholder="Country" className="input" />
+          <input className="input" placeholder="Country" />
         </section>
 
         {/* CONTACT */}
@@ -55,12 +55,12 @@ export default function RegisterPage() {
           <h2 className="font-medium text-lg">Contact Information</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <input type="email" placeholder="Email Address" className="input" />
-            <input placeholder="Mobile Number" className="input" />
+            <input type="email" className="input" placeholder="Email Address" />
+            <input className="input" placeholder="Mobile Number" />
           </div>
         </section>
 
-        {/* IDENTITY */}
+        {/* IDENTIFICATION */}
         <section className="space-y-4">
           <h2 className="font-medium text-lg">Identification</h2>
 
@@ -72,7 +72,7 @@ export default function RegisterPage() {
               <option>National ID</option>
               <option>SSS / GSIS</option>
             </select>
-            <input placeholder="ID Number" className="input" />
+            <input className="input" placeholder="ID Number" />
           </div>
         </section>
 
@@ -81,12 +81,11 @@ export default function RegisterPage() {
           <h2 className="font-medium text-lg">Account Security</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <input type="password" placeholder="Password" className="input" />
-            <input type="password" placeholder="Confirm Password" className="input" />
+            <input type="password" className="input" placeholder="Password" />
+            <input type="password" className="input" placeholder="Confirm Password" />
           </div>
         </section>
 
-        {/* SUBMIT */}
         <button
           type="submit"
           className="w-full py-3 rounded-full bg-black text-white font-medium hover:opacity-90"
@@ -95,20 +94,6 @@ export default function RegisterPage() {
         </button>
 
       </form>
-
-      {/* Tailwind helper */}
-      <style jsx>{`
-        .input {
-          width: 100%;
-          padding: 0.75rem;
-          border: 1px solid #d1d5db;
-          border-radius: 0.5rem;
-          outline: none;
-        }
-        .input:focus {
-          border-color: black;
-        }
-      `}</style>
     </main>
   );
 }
